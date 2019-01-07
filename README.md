@@ -20,7 +20,7 @@ https://pypi.org/project/azhelloworldpackage/
 
 `python test.py`
 
-## create local package
+## Create local package
 
 1. Make sure you have the latest versions of setuptools, wheel and twine installed:
 `pip install --user --upgrade setuptools wheel`
