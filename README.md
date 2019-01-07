@@ -22,7 +22,7 @@ https://pypi.org/project/azhelloworldpackage/
 
 ## Create local package
 
-1. Make sure you have the latest versions of setuptools, wheel and twine installed:
+1. Make sure you have the latest versions of setuptools, wheel installed:
 `pip install --user --upgrade setuptools wheel`
 
 2. `python setup.py sdist bdist_wheel`
@@ -37,13 +37,13 @@ https://pypi.org/project/azhelloworldpackage/
 
 1. get user account https://test.pypi.org
 
-2. get user account https://test.pypi.org
+2. get user account https://pypi.org
 
 3. Make sure you have the latest versions of setuptools, wheel and twine installed:
 `pip install --user --upgrade setuptools wheel`
 `pip install --user --upgrade twine`
 
-4. rename azhelloworldpackage, your package name can contains letters, numbers, _ , and -. It also must not already taken on pypi.org
+4. Rename azhelloworldpackage, your package name can contains letters, numbers, _ , and -. It also must not already taken on pypi.org
 you need to rename `name` in `setup.py` file and rename the folder structure
 `
 
@@ -52,15 +52,15 @@ you need to rename `name` in `setup.py` file and rename the folder structure
 
 `
 
-4. `python setup.py sdist bdist_wheel`
+5. `python setup.py sdist bdist_wheel`
 
-5. upload it to test\prerelease environment `twine upload --repository-url https://test.pypi.org/legacy/ dist/*`
+6. Upload it to test\prerelease environment `twine upload --repository-url https://test.pypi.org/legacy/ dist/*`
 
-6. to test newly uploaded package `pip install -i https://test.pypi.org/simple/ yourpackagename`
+7. Test newly uploaded package `pip install -i https://test.pypi.org/simple/ yourpackagename`
 
-7. upload it to production environment `twine upload dist/*`
+8. Upload it to production environment `twine upload dist/*`
 
-8. to test your package `pip install yourpackagename`
+9. Test your package `pip install yourpackagename`
 
 Resource
 https://packaging.python.org/tutorials/packaging-projects/#uploading-your-project-to-pypi
