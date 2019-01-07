@@ -15,7 +15,9 @@ https://pypi.org/project/azhelloworldpackage/
 
 
 ## Test locally from source code
+
 `pip install .`
+
 `python test.py`
 
 ## create local package
